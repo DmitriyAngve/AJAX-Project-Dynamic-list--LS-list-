@@ -30,14 +30,10 @@ function maker() {
 
 function makeList(item, index) {
   const div = document.createElement("div");
-  div.innerHTML = `${item.fraction} leaded with "${
-    item.leader
-  }", take damage equals ${item.hitpoints} to their "${
-    item.unit
-  }". His status is ${item.status} with ${item.hitpoints - item.damage}`;
+  div.innerHTML = `${item.fraction} leaded with "${item.leader}" has "${item.unit}" with ${item.hitpoints} hitpoints. His status is ${item.status} with ${item.hitpoints} hitpoints`;
   output.append(div);
 
-  if (item.status && item.moveToReach >= 5) {
+  if (item.status && item.hitpoints > 0) {
     div.classList.add("statusOk");
     div.classList.add("alive");
   } else {
@@ -54,26 +50,30 @@ function makeList(item, index) {
     div.classList.toggle("dead");
     console.log(div.classList.contains("alive"));
 
-    if (div.classList.contains("statusOk")) {
-      myList[index].status = "alive";
-    } else {
-      myList[index].status = "dead";
+    if (item.hitpoints > 0) {
+      myList[index].status = "ALIVE";
+      // myList[index].hitpoints =
+    } else if (item.hitpoints < 0) {
+      myList[index].status = "DEAD";
     }
     console.log(myList);
     localStorage.setItem("myList", JSON.stringify(myList));
 
-    if (item.hitpoint <= 0) {
-      myList[index].hitpoints;
-    } else {
-      myList[index].hitpoints = 0;
-    }
+    // if (item.hitpoints > 0) {
+    //   myList[index].status = "ALIVE";
+    // } else {
+    //   myList[index].status = "DEAD";
+    // }
+
     console.log(myList);
     localStorage.setItem("myList", JSON.stringify(myList));
 
     div.innerHTML = `${item.fraction} leaded with "${
       item.leader
-    }", take damage equals ${item.hitpoints} to their "${
-      item.unit
-    }". His status is ${item.status} with ${item.hitpoints - item.damage}`;
+    }", TAKES DAMAGE equals ${item.damage} to their "${item.unit}" with ${
+      item.hitpoints
+    } hitpoints. His status is ${item.status} with ${
+      item.hitpoints - item.damage
+    } hitpoints`;
   });
 }

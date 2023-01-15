@@ -23,17 +23,17 @@ h1 {
 }
 
 .statusOk {
-  color: orangered;
+  color: crimson;
 }
 
 .statusNotOk {
-  color: indigo;
+  color: goldenrod;
 }
 
 .alive {
-  background-color: darkred;
+  background-color: goldenrod;
 }
 
 .dead {
-  background-color: greenyellow;
+  background-color: crimson;
 }

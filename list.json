@@ -3,33 +3,33 @@
     "fraction": "Skaven",
     "leader": "Ikit The Claw",
     "unit": "Doomwheel",
-    "status": "dead",
-    "hitpoints": 3,
+    "status": "ALIVE",
+    "hitpoints": 6,
     "damage": 3
   },
   {
     "fraction": "Dwarfs",
     "leader": "Ungrim Ironfist",
     "unit": "Doomslayer",
-    "status": "alive",
+    "status": "ALIVE",
     "hitpoints": 2,
-    "damage": 4
+    "damage": 1
   },
   {
     "fraction": "Reikland Empire",
     "leader": "Karl Franz",
     "unit": "Steam Tank",
 
-    "status": "dead",
-    "hitpoints": 4,
+    "status": "ALIVE",
+    "hitpoints": 5,
     "damage": 4
   },
   {
     "fraction": "Greenskins",
     "leader": "Skarsnik",
     "unit": "Doom Thrower",
-    "status": "alive",
-    "hitpoints": 2,
+    "status": "ALIVE",
+    "hitpoints": 5,
     "damage": 4
   }
 ]
