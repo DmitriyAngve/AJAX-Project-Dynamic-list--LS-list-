@@ -3,28 +3,33 @@
     "fraction": "Skaven",
     "leader": "Ikit The Claw",
     "unit": "Doomwheel",
-    "moveToReach": 6,
-    "status": true
+    "status": "dead",
+    "hitpoints": 3,
+    "damage": 3
   },
   {
     "fraction": "Dwarfs",
     "leader": "Ungrim Ironfist",
     "unit": "Doomslayer",
-    "moveToReach": 4,
-    "status": false
+    "status": "alive",
+    "hitpoints": 2,
+    "damage": 4
   },
   {
     "fraction": "Reikland Empire",
     "leader": "Karl Franz",
     "unit": "Steam Tank",
-    "moveToReach": 5,
-    "status": false
+
+    "status": "dead",
+    "hitpoints": 4,
+    "damage": 4
   },
   {
     "fraction": "Greenskins",
     "leader": "Skarsnik",
-    "unit": "Goblin Thrower",
-    "moveToReach": 2,
-    "status": false
+    "unit": "Doom Thrower",
+    "status": "alive",
+    "hitpoints": 2,
+    "damage": 4
   }
 ]
