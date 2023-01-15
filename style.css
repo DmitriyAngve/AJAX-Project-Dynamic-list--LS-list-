@@ -1,0 +1,8 @@
+.confirmed {
+  color: green;
+  text-decoration: underline;
+}
+
+.notConfirmed {
+  color: red;
+}
