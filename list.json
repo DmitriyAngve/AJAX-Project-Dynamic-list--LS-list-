@@ -11,13 +11,20 @@
     "leader": "Ungrim Ironfist",
     "unit": "Doomslayer",
     "moveToReach": 4,
-    "status": true
+    "status": false
   },
   {
     "fraction": "Reikland Empire",
     "leader": "Karl Franz",
     "unit": "Steam Tank",
     "moveToReach": 5,
+    "status": false
+  },
+  {
+    "fraction": "Greenskins",
+    "leader": "Skarsnik",
+    "unit": "Goblin Thrower",
+    "moveToReach": 2,
     "status": false
   }
 ]

@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function makeList(item) {
   const div = document.createElement("div");
-  div.innerHTML = `${item.fraction} leaded with ${item.leader}, move their ${item.unit} on ${item.moveToReach} squares. His status is ${item.status}`;
+  div.innerHTML = `${item.fraction} leaded with "${item.leader}", move their "${item.unit}" on ${item.moveToReach} squares. His status is ${item.status}`;
 
   output.append(div);
 
