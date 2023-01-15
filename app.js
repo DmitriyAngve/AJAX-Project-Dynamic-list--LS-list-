@@ -33,7 +33,7 @@ function makeList(item, index) {
   div.innerHTML = `${item.fraction} leaded with "${item.leader}" has "${item.unit}" with ${item.hitpoints} hitpoints. His status is ${item.status} with ${item.hitpoints} hitpoints`;
   output.append(div);
 
-  if (item.status && item.hitpoints > 0) {
+  if (item.status) {
     div.classList.add("statusOk");
     div.classList.add("alive");
   } else {
@@ -44,28 +44,17 @@ function makeList(item, index) {
   div.addEventListener("click", (e) => {
     div.classList.toggle("statusOk");
     div.classList.toggle("statusNotOk");
-    console.log(div.classList.contains("statusOk"));
 
     div.classList.toggle("alive");
     div.classList.toggle("dead");
-    console.log(div.classList.contains("alive"));
 
-    if (item.hitpoints > 0) {
-      myList[index].status = "ALIVE";
-      // myList[index].hitpoints =
-    } else if (item.hitpoints < 0) {
+    if (item.hitpoints - item.damage > 0) {
+      localStorage.getItem("myList", JSON.stringify(myList));
+    } else {
       myList[index].status = "DEAD";
     }
     console.log(myList);
-    localStorage.setItem("myList", JSON.stringify(myList));
 
-    // if (item.hitpoints > 0) {
-    //   myList[index].status = "ALIVE";
-    // } else {
-    //   myList[index].status = "DEAD";
-    // }
-
-    console.log(myList);
     localStorage.setItem("myList", JSON.stringify(myList));
 
     div.innerHTML = `${item.fraction} leaded with "${

@@ -5,7 +5,7 @@
     "unit": "Doomwheel",
     "status": "ALIVE",
     "hitpoints": 6,
-    "damage": 3
+    "damage": 2
   },
   {
     "fraction": "Dwarfs",
@@ -13,7 +13,7 @@
     "unit": "Doomslayer",
     "status": "ALIVE",
     "hitpoints": 2,
-    "damage": 1
+    "damage": 3
   },
   {
     "fraction": "Reikland Empire",
@@ -22,7 +22,7 @@
 
     "status": "ALIVE",
     "hitpoints": 5,
-    "damage": 4
+    "damage": 5
   },
   {
     "fraction": "Greenskins",
