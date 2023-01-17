@@ -66,6 +66,12 @@ h1 {
   gap: 5px;
 }
 
+.content__label__button {
+  font-family: fantasy;
+  font-size: 1.5rem;
+  background-color: goldenrod;
+}
+
 .content__label__form {
   font-family: fantasy;
   font-size: 1.5rem;
@@ -78,4 +84,5 @@ h1 {
   top: 115%;
   left: 50%;
   margin: -50px 0 0 -50px;
+  background-color: goldenrod;
 }

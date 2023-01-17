@@ -23,7 +23,8 @@ function inputs(input) {
 }
 
 const btn2 = document.createElement("button");
-btn2.classList.add("content__label");
+btn2.classList.add("content__label__button");
+
 const div1 = document.createElement("div");
 
 div1.classList.add("content__label");
@@ -37,10 +38,10 @@ appender(input6);
 appender(btn2);
 
 btn2.textContent = "Add to Army List";
-input1.setAttribute("placeholder", "Fraction");
-input2.setAttribute("placeholder", "Leader Name");
-input3.setAttribute("placeholder", "Unit");
-input4.setAttribute("placeholder", "Status");
+input1.setAttribute("placeholder", "Name your Fraction");
+input2.setAttribute("placeholder", "Name your Leader");
+input3.setAttribute("placeholder", "Name your Leader Unit");
+input4.setAttribute("placeholder", "Status: DEAD / ALIVE");
 input5.setAttribute("placeholder", "Hitpoints");
 input6.setAttribute("placeholder", "Taken Damage");
 
