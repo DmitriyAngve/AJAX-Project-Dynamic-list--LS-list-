@@ -1,4 +1,5 @@
 const output = document.querySelector(".output");
+
 console.log(output);
 const url = "list.json";
 let myList = [];
@@ -16,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
       .then((data) => {
         myList = data;
         maker();
-        localStorage.setItem("myList", JSON.stringify(myList));
+        saveToStorage();
       });
   }
 });
@@ -30,26 +31,24 @@ function maker() {
 
 function makeList(item, index) {
   const div = document.createElement("div");
+
+  div.classList.add("box");
+
   div.innerHTML = `${item.fraction} leaded with "${item.leader}" has "${item.unit}" with ${item.hitpoints} hitpoints. His status is ${item.status} with ${item.hitpoints} hitpoints`;
   output.append(div);
 
   if (item.status) {
-    div.classList.add("statusOk");
-    div.classList.add("alive");
-  } else {
-    div.classList.add("statusNotOk");
     div.classList.add("dead");
+  } else {
+    div.classList.add("alive");
   }
 
   div.addEventListener("click", (e) => {
-    div.classList.toggle("statusOk");
-    div.classList.toggle("statusNotOk");
-
     div.classList.toggle("alive");
     div.classList.toggle("dead");
 
     if (item.hitpoints - item.damage > 0) {
-      localStorage.getItem("myList", JSON.stringify(myList));
+      saveToStorage();
     } else {
       myList[index].status = "DEAD";
     }
@@ -64,5 +63,21 @@ function makeList(item, index) {
     } hitpoints. His status is ${item.status} with ${
       item.hitpoints - item.damage
     } hitpoints`;
+
+    const span = document.createElement("span");
+    span.textContent = "DELETE";
+    div.append(span);
+    span.addEventListener("click", (e) => {
+      console.log(index);
+      e.stopPropagation();
+      div.remove();
+      myList.splice(index, 1);
+      saveToStorage();
+    });
   });
+}
+
+function saveToStorage() {
+  console.log(myList);
+  localStorage.setItem("myList", JSON.stringify(myList));
 }

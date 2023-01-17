@@ -22,18 +22,35 @@ h1 {
   font-family: fantasy;
 }
 
-.statusOk {
+.dead {
   color: crimson;
-}
-
-.statusNotOk {
-  color: goldenrod;
-}
-
-.alive {
   background-color: goldenrod;
 }
 
-.dead {
+.alive {
+  color: goldenrod;
   background-color: crimson;
+}
+
+.box {
+  padding: 10px;
+  width: 300px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+}
+
+.box span {
+  width: 20px;
+  height: 20px;
+  border: 1px solid orangered;
+  padding: 2px;
+  border-radius: 10px;
+  color: red;
+  margin-left: 20px;
+}
+
+.box span:hover {
+  cursor: pointer;
+  background-color: cornsilk;
+  color: black;
 }
