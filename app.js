@@ -2,7 +2,7 @@ const output = document.querySelector(".output");
 const btn1 = document.createElement("button");
 btn1.textContent = "Reload";
 btn1.addEventListener("click", reloader);
-document.body.append(btn1);
+
 btn1.classList.add("btn");
 
 const input1 = document.createElement("input");
@@ -30,7 +30,7 @@ input5.setAttribute("placeholder", "Hitpoints");
 input6.setAttribute("placeholder", "Taken Damage");
 
 document.body.append(div1);
-document.body.append(bnt1);
+document.body.append(btn1);
 btn2.addEventListener("click", addToList);
 
 function appender(element) {
