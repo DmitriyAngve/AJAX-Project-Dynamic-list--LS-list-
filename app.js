@@ -40,7 +40,7 @@ appender(btn2);
 btn2.textContent = "Add to Army List";
 input1.setAttribute("placeholder", "Name your Fraction");
 input2.setAttribute("placeholder", "Name your Leader");
-input3.setAttribute("placeholder", "Name your Leader Unit");
+input3.setAttribute("placeholder", "Name your Unit");
 input4.setAttribute("placeholder", "Status: DEAD / ALIVE");
 input5.setAttribute("placeholder", "Hitpoints");
 input6.setAttribute("placeholder", "Taken Damage");
