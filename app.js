@@ -2,10 +2,7 @@ const output = document.querySelector(".output");
 const btn1 = document.createElement("button");
 btn1.textContent = "Reload";
 btn1.addEventListener("click", reloader);
-btn1.classList.add("btn");
-
-const content__label = document.createElement("content__label");
-content__label.classList.add("content__label");
+btn1.classList.add("reload");
 
 const input1 = document.createElement("input");
 const input2 = document.createElement("input");
@@ -13,8 +10,24 @@ const input3 = document.createElement("input");
 const input4 = document.createElement("input");
 const input5 = document.createElement("input");
 const input6 = document.createElement("input");
+
+inputs(input1);
+inputs(input2);
+inputs(input3);
+inputs(input4);
+inputs(input5);
+inputs(input6);
+
+function inputs(input) {
+  input.classList.add("content__label__form");
+}
+
 const btn2 = document.createElement("button");
+btn2.classList.add("content__label");
 const div1 = document.createElement("div");
+
+div1.classList.add("content__label");
+
 appender(input1);
 appender(input2);
 appender(input3);
