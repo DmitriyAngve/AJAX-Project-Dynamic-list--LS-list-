@@ -2,32 +2,33 @@ const output = document.querySelector(".output");
 const btn1 = document.createElement("button");
 btn1.textContent = "Reload";
 btn1.addEventListener("click", reloader);
-
 btn1.classList.add("btn");
 
-const input1 = document.createElement("input");
-const input2 = document.createElement("input");
-const input3 = document.createElement("input");
-const input4 = document.createElement("input");
-const input5 = document.createElement("input");
-const input6 = document.createElement("input");
+const new_div = document.getElementsByClassName("content");
+
+// const input1 = document.createElement("input");
+// const input2 = document.createElement("input");
+// const input3 = document.createElement("input");
+// const input4 = document.createElement("input");
+// const input5 = document.createElement("input");
+// const input6 = document.createElement("input");
 const btn2 = document.createElement("button");
 const div1 = document.createElement("div");
-appender(input1);
-appender(input2);
-appender(input3);
-appender(input4);
-appender(input5);
-appender(input6);
+// appender(input1);
+// appender(input2);
+// appender(input3);
+// appender(input4);
+// appender(input5);
+// appender(input6);
 appender(btn2);
 
 btn2.textContent = "Add to Army List";
-input1.setAttribute("placeholder", "Fraction");
-input2.setAttribute("placeholder", "Leader Name");
-input3.setAttribute("placeholder", "Unit");
-input4.setAttribute("placeholder", "Status");
-input5.setAttribute("placeholder", "Hitpoints");
-input6.setAttribute("placeholder", "Taken Damage");
+// input1.setAttribute("placeholder", "Fraction");
+// input2.setAttribute("placeholder", "Leader Name");
+// input3.setAttribute("placeholder", "Unit");
+// input4.setAttribute("placeholder", "Status");
+// input5.setAttribute("placeholder", "Hitpoints");
+// input6.setAttribute("placeholder", "Taken Damage");
 
 document.body.append(div1);
 document.body.append(btn1);

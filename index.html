@@ -9,8 +9,52 @@
     <title>Some Nerdy Board Game</title>
   </head>
   <body>
-    <div class="content">
+    <div class="content" id="wrap">
       <h1>Some Nerdy Board Game</h1>
+      <label class="content__label">Fraction: </label>
+      <input
+        required
+        name="Fraction"
+        type="text"
+        placeholder="Format: 'Orcs, Dwarfs'"
+      />
+      <label class="content__label">Leader: </label>
+      <input
+        required
+        name="Leader"
+        type="text"
+        placeholder="Format: 'Named leader'"
+      />
+      <label class="content__label">Unit: </label>
+      <input
+        required
+        name="Unit"
+        type="text"
+        placeholder="Format: 'Named your Unit'"
+      />
+      <label class="content__label">Status: </label>
+      <input
+        required
+        name="Status"
+        type="text"
+        placeholder="Format: 'DEAD / ALIVE'"
+      />
+      <label class="content__label">Hitpoints: </label>
+      <input
+        value="1"
+        required
+        name="Hitpoints"
+        type="number"
+        placeholder="Format: 'Hitpoints Number'"
+      />
+      <label class="content__label">Taken damage: </label>
+      <input
+        value="1"
+        required
+        name="Leader"
+        type="number"
+        placeholder="Format: 'Taken damage'"
+      />
       <div class="output"></div>
     </div>
   </body>
